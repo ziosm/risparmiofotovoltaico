@@ -1,0 +1,5 @@
+# Backend Flask per RisparmioFotovoltaico.it
+# Per Vercel Serverless Functions
+
+Flask==3.1.2
+Flask-Cors==6.0.2
