@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://risparmiofotovoltaico.solar/sitemap.xml
+
+# Pagine da indicizzare
+Allow: /index.html
+Allow: /preventivo.html
+Allow: /privacy.html
+Allow: /cookie-policy.html
+Allow: /termini.html
+Allow: /grazie.html
+
+# Immagini
+Allow: /images/
+Allow: /images/logo.png
+Allow: /images/fotovoltaico.png
+
+# Blocca eventuali cartelle amministrative
+Disallow: /admin/
+Disallow: /test/
+Disallow: /api/
+
+# Crawl delay per non sovraccaricare il server
+Crawl-delay: 1

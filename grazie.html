@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5PHE21Q8B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T5PHE21Q8B');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17891071032"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17891071032');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K7Q473TK');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie! Richiesta Ricevuta | RisparmioFotovoltaico.solar</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CompleteAction",
+      "name": "Richiesta Preventivo Fotovoltaico",
+      "description": "L'utente ha completato con successo la richiesta di preventivo per impianto fotovoltaico",
+      "result": {
+        "@type": "ActionStatusType",
+        "name": "CompletedActionStatus"
+      },
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://tuosito.vercel.app/grazie.html"
+      }
+    }
+    </script>
+    
+    <style>
+        /* Variabili colore - allineate con il sito principale */
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --secondary: #f59e0b;
+            --secondary-dark: #d97706;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gray-light: #e2e8f0;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Container principale */
+        .thankyou-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .thankyou-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 60px 50px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thankyou-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        /* Success Icon */
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--success), #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 50px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        /* Header */
+        .thankyou-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .thankyou-header h1 {
+            font-size: 42px;
+            color: var(--dark);
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .thankyou-header p {
+            font-size: 20px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Info Steps */
+        .info-steps {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .info-steps h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            color: var(--dark);
+            font-size: 28px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .step-item {
+            background: white;
+            padding: 25px 20px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+        }
+
+        .step-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .step-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .step-item p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        /* WhatsApp Box */
+        .whatsapp-box {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 35px;
+            border-radius: var(--radius);
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.2;
+        }
+
+        .whatsapp-box h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .whatsapp-box p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .whatsapp-number {
+            display: inline-block;
+            background: white;
+            color: #25D366;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+        }
+
+        .whatsapp-number:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
+        }
+
+        .contact-info h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item i {
+            color: var(--primary);
+            font-size: 20px;
+        }
+
+        /* Footer Links */
+        .footer-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-up {
+            animation: slideUp 0.6s ease-out 0.3s both;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .thankyou-card {
+                padding: 40px 25px;
+            }
+            
+            .thankyou-header h1 {
+                font-size: 32px;
+            }
+            
+            .thankyou-header p {
+                font-size: 18px;
+            }
+            
+            .info-steps {
+                padding: 30px 20px;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .whatsapp-box {
+                padding: 25px 20px;
+            }
+            
+            .whatsapp-number {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            
+            .btn {
+                padding: 16px 30px;
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thankyou-header h1 {
+                font-size: 28px;
+            }
+            
+            .whatsapp-box h3 {
+                font-size: 22px;
+            }
+            
+            .whatsapp-box p {
+                font-size: 16px;
+            }
+            
+            .success-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7Q473TK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="thankyou-container fade-in">
+        <div class="thankyou-card">
+            <!-- Success Icon -->
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <!-- Header -->
+            <div class="thankyou-header">
+                <h1><i class="fas fa-bolt"></i> Richiesta Ricevuta con Successo!</h1>
+                <p>Grazie per averci contattato. Il tuo interesse per il fotovoltaico è il primo passo verso un futuro più sostenibile ed economico.</p>
+            </div>
+
+            <!-- Info Steps -->
+            <div class="info-steps slide-up">
+                <h2><i class="fas fa-list-ol"></i> Cosa Succede Ora?</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-icon">
+                            <i class="fas fa-bolt" style="color: var(--primary);"></i>
+                        </div>
+                        <h3>Conferma Immediata</h3>
+                        <p><strong>Nei prossimi 5 minuti</strong> ti contatteremo via WhatsApp per confermare i dettagli</p>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line" style="color: var(--primary);"></i>
+                        </div>
+                        <h3>Analisi Personalizzata</h3>
+                        <p><strong>Entro 24 ore</strong> riceverai un'analisi dettagliata della tua situazione energetica</p>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-icon">
+                            <i class="fas fa-file-alt" style="color: var(--primary);"></i>
+                        </div>
+                        <h3>Preventivi Comparati</h3>
+                        <p><strong>Entro 48 ore</strong> ti invieremo 3 preventivi da installatori certificati</p>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-icon">
+                            <i class="fas fa-handshake" style="color: var(--primary);"></i>
+                        </div>
+                        <h3>Scelta Libera</h3>
+                        <p><strong>Tu scegli</strong> l'installatore che preferisci, senza alcun obbligo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Box -->
+            <div class="whatsapp-box slide-up" style="animation-delay: 0.4s;">
+                <h3><i class="fab fa-whatsapp"></i> Controlla WhatsApp!</h3>
+                <p>Risponderemo da questo numero:</p>
+                <div class="whatsapp-number">
+                    <i class="fab fa-whatsapp"></i> +39 380 129 7029
+                </div>
+                <p>Ti scriveremo in meno di 5 minuti per concordare i dettagli.</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="slide-up" style="animation-delay: 0.5s; text-align: center; margin: 40px 0;">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Torna alla Home
+                </a>
+                <a href="tel:+393801297029" class="btn btn-secondary" style="margin-left: 15px;">
+                    <i class="fas fa-phone"></i> Chiamaci Ora
+                </a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info slide-up" style="animation-delay: 0.6s;">
+                <h4><i class="fas fa-life-ring"></i> Supporto e Contatti</h4>
+                <p>Hai domande urgenti o bisogno di assistenza immediata?</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Telefono</strong><br>
+                            <span>+39 380 129 7029</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span>info@studioartlimb.it</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Orari</strong><br>
+                            <span>Lun-Ven: 9-18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links slide-up" style="animation-delay: 0.7s;">
+                <a href="privacy.html">
+                    <i class="fas fa-shield-alt"></i> Privacy Policy
+                </a>
+                <a href="cookie-policy.html">
+                    <i class="fas fa-cookie-bite"></i> Cookie Policy
+                </a>
+                <a href="termini.html">
+                    <i class="fas fa-file-contract"></i> Termini e Condizioni
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Ottieni parametri dalla query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const leadId = urlParams.get('id');
+        const email = urlParams.get('email');
+
+        // Tracking per analytics
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Pagina ringraziamento caricata');
+            
+            if (leadId) {
+                console.log('Lead ID registrato:', leadId);
+                
+                // Google Analytics 4
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-XXXXXXXXX/XXXXX',
+                        'value': 1.0,
+                        'currency': 'EUR',
+                        'transaction_id': leadId
+                    });
+                }
+                
+                // Facebook Pixel
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: 'Richiesta Preventivo Fotovoltaico',
+                        content_category: 'Solar',
+                        value: 50.00,
+                        currency: 'EUR',
+                        lead_id: leadId
+                    });
+                }
+            }
+            
+            // Animazioni progressive
+            const elements = document.querySelectorAll('.slide-up');
+            elements.forEach((el, index) => {
+                el.style.animationDelay = `${0.3 + (index * 0.1)}s`;
+            });
+            
+            // Timer per WhatsApp
+            let minutes = 5;
+            let seconds = 0;
+            const whatsappTimer = document.createElement('div');
+            whatsappTimer.className = 'whatsapp-timer';
+            whatsappTimer.style.cssText = `
+                text-align: center;
+                margin-top: 15px;
+                font-size: 18px;
+                color: white;
+                position: relative;
+                z-index: 1;
+            `;
+            
+            const timerInterval = setInterval(() => {
+                if (seconds === 0) {
+                    if (minutes === 0) {
+                        clearInterval(timerInterval);
+                        whatsappTimer.innerHTML = '<strong><i class="fas fa-clock"></i> Dovresti aver ricevuto il nostro messaggio!</strong>';
+                        return;
+                    }
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                
+                whatsappTimer.innerHTML = `<strong><i class="fas fa-clock"></i> Ti contatteremo entro: ${minutes}:${seconds.toString().padStart(2, '0')}</strong>`;
+            }, 1000);
+            
+            document.querySelector('.whatsapp-box').appendChild(whatsappTimer);
+        });
+        
+        // Salva leadId nel localStorage per tracciamento cross-pagina
+        if (leadId) {
+            localStorage.setItem('lead_id', leadId);
+            localStorage.setItem('lead_timestamp', new Date().toISOString());
+        }
+        
+        // Redirect automatico dopo 30 secondi
+        setTimeout(() => {
+            console.log('Redirect automatico alla home dopo 30 secondi');
+        }, 30000);
+    </script>
+</body>
+</html>

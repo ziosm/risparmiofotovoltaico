@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home Page - Pagina Informativa Fotovoltaico -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://risparmiofotovoltaico.solar/images/fotovoltaico.png</image:loc>
+      <image:title>Villetta con impianto fotovoltaico installato</image:title>
+      <image:caption>Esempio di installazione domestica fotovoltaico</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://risparmiofotovoltaico.solar/images/logo.png</image:loc>
+      <image:title>Risparmio Fotovoltaico - Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pagina Preventivo - Calcolatore e Form -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/preventivo.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pagina Privacy Policy -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/privacy.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Pagina Cookie Policy -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/cookie-policy.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Pagina Termini e Condizioni -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/termini.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Pagina Grazie -->
+  <url>
+    <loc>https://risparmiofotovoltaico.solar/grazie.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
