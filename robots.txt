@@ -10,7 +10,7 @@ Allow: /preventivo.html
 Allow: /privacy.html
 Allow: /cookie-policy.html
 Allow: /termini.html
-Allow: /grazie.html
+Disallow: /grazie.html
 
 # Immagini
 Allow: /images/
